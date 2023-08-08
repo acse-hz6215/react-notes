@@ -61,7 +61,7 @@ console.log(args);
 
 好处是 args 还可以配合其他参数去使用，比如：
 
-而且不一定用 args，可以用其他名字，比如 ...aaa
+而且不一定用 args，可以用其他名字，比如 `...aaa`
 
 ```js
 const func = (a, b, ...args) => {
