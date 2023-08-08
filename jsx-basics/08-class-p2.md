@@ -24,7 +24,7 @@
 例如：
 
 ```js
-//先定义一个类
+// 先定义一个类
 class myClass {
   func() {
     console.log(this);
@@ -63,7 +63,7 @@ test(); // 输出: undefined
 //   }
 // }
 
-//通过箭头函数将this绑定到当前实例
+// 通过箭头函数将this绑定到当前实例
 class myClass {
   func = () => {
     console.log(this);
@@ -73,8 +73,8 @@ class myClass {
 const p = new myClass(); // 创建一个实例
 const test = p.func;
 
-p.func(); // 打印结果：myClass {}
-test(); // 打印结果：myClass {}
+p.func(); // 输出：myClass {}
+test(); // 输出：myClass {}
 ```
 
 ### 4. **注意：严格模式”与 this 的默认值是两个相关但独立的概念**

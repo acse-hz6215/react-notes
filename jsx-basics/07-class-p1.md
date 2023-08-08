@@ -8,24 +8,24 @@
 
 ```js
 class Person {
-  //可以直接在类中定义属性 （不需要const关键字）
+  // 可以直接在类中定义属性 （不需要const关键字）
   name = "John";
   age = 18;
 
-  //也可以在类中定义方法 （不需要function关键字）
+  // 也可以在类中定义方法 （不需要function关键字）
   greeting() {
     return "Hello, World!";
   }
 }
 
-const p = new Person(); //创建一个Person类的实例
+const p = new Person(); // 创建一个Person类的实例
 
 console.log(p.name);
-//打印结果：John
+// 输出：John
 console.log(p.age);
-//打印结果：18
+// 输出：18
 console.log(p.greeting());
-//打印结果：Hello, World!
+// 输出：Hello, World!
 ```
 
 ## constructor() 构造函数
@@ -39,18 +39,18 @@ console.log(p.greeting());
 ```js
 class Person {
   constructor(...args) {
-    console.log(args); //args包含了所有传入的实参
+    console.log(args); // args包含了所有传入的实参
   }
 }
 
-//在调用new创建对象时，会调用类中的constructor()构造函数，并且可以传入参数
+// 在调用new创建对象时，会调用类中的constructor()构造函数，并且可以传入参数
 const p = new Person("John", 18);
 const p2 = new Person("Jane", 20);
 
 console.log(p.name);
-//打印结果：John
+// 输出：John
 console.log(p2.name);
-//打印结果：Jane
+// 输出：Jane
 ```
 
 常用的写法是直接把值写在 constructor()中，然后通过 this 来引用当前对象，进行动态赋值：
@@ -58,22 +58,22 @@ console.log(p2.name);
 ```js
 class Person {
   constructor(name, age) {
-    //将参数赋值给对象中的属性
-    //**注意：第一个name是对象中的属性，第二个name是构造函数的参数（形参）
-    //相当于把参数name赋值给了属性，相当于var name = name
+    // 将参数赋值给对象中的属性
+    // **注意：第一个name是对象中的属性，第二个name是构造函数的参数（形参）
+    // 相当于把参数name赋值给了属性，相当于var name = name
     this.name = name;
     this.age = age;
   }
 
-  //使用arrow function定义方法
+  // 使用arrow function定义方法
   greeting = () => {
     console.log(`Hello, my name is ${this.name}, I'm ${this.age} years old.`);
   };
 }
 
-//通过new创建对象时，会调用类中的constructor()构造函数，并且传入参数
+// 通过new创建对象时，会调用类中的constructor()构造函数，并且传入参数
 const p = new Person("John", 18);
 
 p.greeting();
-//打印结果：Hello, my name is John, I'm 18 years old.
+// 输出：Hello, my name is John, I'm 18 years old.
 ```

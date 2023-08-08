@@ -42,36 +42,36 @@ ES6之前，JavaScript没有模块系统，ES6的模块化分为两个部分：e
 ```js
 // 创建一个变量模块 variables.js
 const a = 1;
-export default a; //默认导出变量a
+export default a; // 默认导出变量a
 
-//创建一个对象模块 myObject.js
+// 创建一个对象模块 myObject.js
 const myObject = {
     name: 'John',
     age: 18,
 };
-export default myObject; //默认导出对象myObject
+export default myObject; // 默认导出对象myObject
 
-//创建一个函数模块 math.js
+// 创建一个函数模块 math.js
 function greeting() {
     return "Hello, World!";
 }
-export default greeting; //默认导出函数greeting
+export default greeting; // 默认导出函数greeting
 ```
 在另一个文件中导入以上模块：
 ```js
-//app.js
+// app.js
 
-import haha from './variables.js'; //导入变量a,导入默认模块时变量名可以自主指定
-import myObject from './myObject.js'; //导入对象myObject
-import greeting from './math.js'; //导入函数greeting
+import haha from './variables.js'; // 导入变量a,导入默认模块时变量名可以自主指定
+import myObject from './myObject.js'; // 导入对象myObject
+import greeting from './math.js'; // 导入函数greeting
 
 
 console.log(haha);
- //打印结果：1
+ // 输出：1
 console.log(myObject.name); 
-//打印结果：John
+// 输出：John
 console.log(greeting()); 
-//打印结果：Hello, World!
+// 输出：Hello, World!
 ```
 
 ## 命名导入/导出 Named Import/Export
@@ -79,64 +79,64 @@ console.log(greeting());
 
 创建一个变量模块 module.js:
 ```js
-//module.js
+// module.js
 
-//----------创建变量---------------
+// ----------创建变量---------------
 const a = 1;
-export const b = 2; //命名导出变量b
-export const c = 3; //命名导出变量c
+export const b = 2; // 命名导出变量b
+export const c = 3; // 命名导出变量c
 
-//----------创建对象---------------
+// ----------创建对象---------------
 const myObject = {
     name: 'John',
     age: 18,
 };
-//----------创建函数--------------
+// ----------创建函数--------------
 function greeting() {
     return "Hello, World!";
 }
-//----------命名导出---------------
+// ----------命名导出---------------
 
-export{myObject,greeting}; //命名导出对象myObject、函数greeting
+export{myObject,greeting}; // 命名导出对象myObject、函数greeting
 ```
 在另一个文件中导入以上模块，名字必须与导出的变量名完全匹配：
 ```js
-//app.js
+// app.js
 
-import {b, c, myObject, greeting} from './module.js'; //导入变量b、c、对象myObject、函数greeting
+import {b, c, myObject, greeting} from './module.js'; // 导入变量b、c、对象myObject、函数greeting
 
 console.log(b);
-//打印结果：2
+// 输出：2
 console.log(c);
-//打印结果：3
+// 输出：3
 console.log(myObject.name);
-//打印结果：John
+// 输出：John
 console.log(greeting());
-//打印结果：Hello, World!
+// 输出：Hello, World!
 ```
 当然也可以改名导入：
 ```js
-//app.js
-import {b as haha, c as hehe} from './variables.js'; //导入变量b和c并改名为haha和hehe
+// app.js
+import {b as haha, c as hehe} from './variables.js'; // 导入变量b和c并改名为haha和hehe
 
 console.log(haha);
-//打印结果：2
+// 输出：2
 console.log(hehe);
-//打印结果：3
+// 输出：3
 ```
 
 ## 组合使用
 在实际开发中，通常会将默认导出和命名导出组合使用，例如：
 ```js
-//combined.js
+// combined.js
 
-//命名导出变量a、函数greeting
+// 命名导出变量a、函数greeting
 export const a = 1;
 export function greeting() {
     return "Hello, World!";
 }
 
-//默认导出对象myObject
+// 默认导出对象myObject
 const myObject = {
     name: 'John',
     age: 18,
@@ -145,14 +145,14 @@ export default myObject;
 ```
 在另一个文件中导入以上模块：
 ```js
-//app.js
+// app.js
 
-import myObject, {a, greeting} from './combined.js'; //导入默认模块myObject、变量a、函数greeting
+import myObject, {a, greeting} from './combined.js'; // 导入默认模块myObject、变量a、函数greeting
 
 console.log(a);
-//打印结果：1
+// 输出：1
 console.log(greeting());
-//打印结果：Hello, World!
+// 输出：Hello, World!
 console.log(myObject.name);
-//打印结果：John
+// 输出：John
 ```

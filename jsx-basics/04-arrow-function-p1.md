@@ -8,12 +8,12 @@
 ```js
 const sum = a => a+1; 
 
-//相当于
+// 相当于
 function sum(a){
     return a+1;
 }
 
-console.log(sum(1)); //打印结果：2
+console.log(sum(1)); // 输出：2
 ```
 当函数没有参数，或有多个参数，需要用(小括号)括起来
 > const 函数名 = (参数1,参数2) => 返回值
@@ -25,5 +25,5 @@ console.log(sum(1)); //打印结果：2
 const sum = (a,b) => a+b;
 
 let result = sum(1,2);
-console.log(result); //打印结果：3
+console.log(result); // 输出：3
 ```
