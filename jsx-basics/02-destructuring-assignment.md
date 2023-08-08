@@ -33,9 +33,11 @@ const object = {
 
 //  let a,b,c; 
 //  ({name:a, age:b, gender:c} = object;) 
-//  这里把object里的值分别赋给a,b,c
-//  **注意：** 任何时候都不要用{大括号}开头，要加(括号)，否则会被认为是一个代码块
-//  这个相当于 a=obj.name; b=obj.age; etc.
+/* 
+* 这里把object里的值分别赋给a,b,c
+* **注意：** 任何时候都不要用{大括号}开头，要加(括号)，否则会被认为是一个代码块
+* 这个相当于 a=obj.name; b=obj.age; etc.
+*/
 
 const {name, gender,age} = object; // 这是更common的写法，一边声明变量，一边解构，同时属性名和变量名一致
 // 这个相当于const {name:name; gender:gender,age:age} = obj; 
