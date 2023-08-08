@@ -12,7 +12,4 @@ Tree
 ```
 Reference
 - [React18 视频教程（讲师：李立超）React 视频教程](https://www.bilibili.com/video/BV1bS4y1b7NV/?p=5&spm_id_from=pageDriver&vd_source=6145bca5bc5612c5da7202b32d7ded7b)
-  - 课程代码：
-  链接: https://pan.baidu.com/s/16hEN7j4hLDpd7NoFiS8dHw?pwd=4gxv 提取码: 4gxv 复制这段内容后打开百度网盘手机 App，操作更方便哦。
-  - 更新的第二部分代码：链接：https://pan.baidu.com/s/1mDkvLqYVz1QGTV1foz5mQg?pwd=5zir
-提取码：5zirKv
+- [React预备知识](https://www.lilichao.com/index.php/2022/03/18/react%e9%a2%84%e5%a4%87%e7%9f%a5%e8%af%86/)
