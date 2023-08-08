@@ -12,7 +12,9 @@ Tree
     ├── 05-arrow-function-p2.md
     ├── 06-modules.md
     ├── 07-class-p1.md
-    └── 08-class-p2.md
+    ├── 08-class-p2.md
+    ├── 09-class-p3.md
+    └── 10-class-p4.md
 ```
 
 Reference
