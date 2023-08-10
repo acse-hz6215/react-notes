@@ -1,0 +1,70 @@
+<!--
+    - press `shift + 1` or type `!`
+    - use GoLive to view the web
+    - http://localhost:5500/script/02-hello-word.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!--Warning: The CDN links are experimental versions of React and ReactDOM, don't use them in production.-->
+  <!--引入react核心库-->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--用来显示内容的容器-->
+
+  <script>
+    //----------------------------------------------------------
+    //展示通过DOM来创建一个div
+    //----------------------------------------------------------
+    /*
+     * 首先，通过document.createElement('div')直接创建了一个真实的div DOM元素。
+     * 然后，使用innerText属性给这个div设置了内容。
+     * 再然后，通过document.getElementById('root')获取了页面上ID为root的DOM元素。
+     * 最后，使用appendChild方法将新创建的div添加到root元素中。
+     */
+
+    //   const div = document.createElement('div')
+    //   div.innerText = '我是DOM创建的元素' // 设置div的内容
+    //   const root = document.getElementById('root')
+    //   root.appendChild(div) // 将div添加到root元素中
+
+    //----------------------------------------------------------
+    //展示使用React API来创建一个div
+    //----------------------------------------------------------
+    /*
+     * react 是用来代替DOM的
+     * 首先，React.createElement()函数创建了一个React元素（这实际上是一个虚拟DOM对象，不是真实的DOM元素）。这个虚拟DOM对象描述了一个div元素，其内容是'我是react创建的元素'
+     * 然后，ReactDOM.render用于将虚拟DOM元素渲染到真实DOM中
+     */
+
+    /*
+     * React.createElement() 用来创建一个React元素
+     * - 三个参数：
+     *   1. 元素名（组件名）
+     *   2. 元素属性（null表示没有属性）
+     *   3. 元素的子元素（内容，null表示没有子元素）
+     */
+    const div = React.createElement("div", {}, "我是React创建的元素");
+
+    // 将React元素渲染到页面上：
+
+    // 老版本React的写法：
+    // ReactDOM.render(div, document.getElementById("root")); 
+
+    // 新版本React的写法：
+    const root = ReactDOM.createRoot(document.getElementById("root")); // 获取根元素，根元素就是React元素要插入的位置
+    root.render(div); // 将div添加到root元素中
+
+  </script>
+</body>
+
+</html>
