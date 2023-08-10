@@ -18,7 +18,7 @@
 - React 元素一旦创建就不能修改，只能通过创建新的元素来替换
 
 示例代码：
-[../script/03-react-API/createElement.html](../script/03-react-API/createElement.html)
+[../script/03-react-API.html](../script/03-react-API.html)
 
 ```js
 // 创建一个按钮元素
