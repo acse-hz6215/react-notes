@@ -34,6 +34,8 @@ const button = <button>我是按钮</button>; // 与上面的命令式编程效�
 
 示例代码：[../script/04-JSX-basics-p1.html](../script/04-JSX-basics-p1.html)
 
+![](image/button.png)
+
 例如，用 JSX 创建一个带有按钮的 div:
 
 1. 首先，需要在 HTML 文件中引入 `Babel` 库

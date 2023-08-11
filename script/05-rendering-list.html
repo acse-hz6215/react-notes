@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering List</title>
+
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!--babel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!--创建root标签-->
+    <script type="text/babel">
+
+        const data= ["Coffee", "Tea", "Milk"];
+        
+        const arr = data.map(item => <li>{item}</li>); // 相当于 for (let i = 0; i < data.length; i++) {arr.push(<li>{data[i]}</li>);}
+
+        const list = <ul>{arr}</ul>; // JSX 写法
+        /* 相当于   
+        * <ul>
+        *   <li>Coffee</li>
+        *   <li>Tea</li>
+        *   <li>Milk</li>
+        * </ul>
+         */
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(list);
+    </script>
+
+
+    
+</body>
+</html>

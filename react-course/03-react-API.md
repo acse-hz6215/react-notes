@@ -27,6 +27,8 @@
 示例代码：
 [../script/03-react-API.html](../script/03-react-API.html)
 
+![](image/button.png)
+
 ```js
 // 创建一个按钮元素
 const button = React.createElement(
