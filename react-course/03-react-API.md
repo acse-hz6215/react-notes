@@ -1,4 +1,11 @@
-# React API
+
+- [三个React API](#三个react-api)
+  - [React.createElement()](#reactcreateelement)
+    - [React 元素的不可变性](#react-元素的不可变性)
+  - [ReactDOM.createRoot()](#reactdomcreateroot)
+  - [root.render()](#rootrender)
+
+# 三个React API
 
 ## React.createElement()
 
@@ -38,7 +45,7 @@ const div = React.createElement("div", {}, "我是一个div", button); // 这个
 
 // 将 div 元素渲染到页面上：
 const root = ReactDOM.createRoot(document.getElementById("root")); // 创建根元素
-root.render(div); // 将 div 元素添加到根元素中：
+root.render(div); // 将 div 元素添加到根元素中
 ```
 
 ### React 元素的不可变性
@@ -73,7 +80,7 @@ root.render(div);
 
 ## ReactDOM.createRoot()
 
-作用：获取或创建根元素（root）。根元素是 React 元素要插入的位置
+作用：获取或创建根元素。根元素是 React 元素要插入的位置
 
 注意：当对页面进行重新渲染时，React 会对比新旧元素之间的差异，并只更新有差异的部分，从而提高页面渲染效率
 

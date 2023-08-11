@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX-basics-part1</title>
+
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!--babel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="root"></div> <!--创建root标签-->
+
+    <!--设置js代码被babel转译-->
+    <script type = "text/babel"> 
+
+        /* 
+        * JSX 就是React.createElement()的语法糖
+        * JSX在执行前会被babel转译为纯JS代码
+        */
+
+        const div = <div>
+            我是一个div
+            <button>我是按钮</button>
+        </div>; // 相当于const div = React.createElement('div',{}, '我是一个div', React.createElement('button',{}, '我是按钮'));
+
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(div);
+
+
+    </script>
+
+</body>
+
+</html>

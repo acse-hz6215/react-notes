@@ -12,7 +12,7 @@ P.S. 使用 `create-react-app `创建项目时，会自动处理底层依赖关�
 分别使用用纯 DOM API 和 React AIP 来创建并将一个 div 元素添加到页面上
 
 示例代码：
-[../script/02-hello-world/use-dom-and-react-to-create-div.html](../script/02-hello-world/use-dom-and-react-to-create-div.html)
+[../script/02-hello-world.html](../script/02-hello-world.html)
 
 通过 DOM 创建 div：
 

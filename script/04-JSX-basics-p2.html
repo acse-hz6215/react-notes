@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSX-basics-part2</title>
+
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!--babel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!--创建root标签-->
+
+    <script type="text/babel">
+        // create a user object
+        const user = {
+            name: "John",
+            age: 18,
+        };
+
+        // create a React element
+        const sayHello = <h1>Hello, {user.name}</h1>;
+
+        const div = (
+            <div
+                id="box"
+                onClick={() =>
+                {
+                    alert("hello");
+                }}
+                style={{
+                    color: "blue",
+                    fontSize: "20px",
+                    backgroundColor: "yellowgreen",
+                    border: "5px solid red",
+                }}>
+                我是一个div {/*注释写在花括号里*/}
+                {sayHello}
+            </div>
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(div);
+    </script>
+</body>
+
+</html>
