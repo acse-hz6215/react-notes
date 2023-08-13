@@ -1,4 +1,5 @@
 # JSX Syntax & Usage
+
 示例代码：[../script/04-JSX-basics-p2.html](../script/04-JSX-basics-p2.html)
 
 ![text](./image/04-JSX-example.png)
@@ -58,4 +59,4 @@
       <div style={{ color: "red", fontSize: "20px" }}></div>
       // 注意这里用了双大括号{{}}，外层大括号表示这是一个表达式，内层大括号表示这是一个对象
       ```
-6. JSX 中的注释用 `{/* ... */}` 包裹
+6. JSX 中的注释要写在`{}`里 -> `{/* ... */}`
