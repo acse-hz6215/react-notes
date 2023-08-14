@@ -11,7 +11,7 @@
 ```js
 const sum = (a) => a + 1;
 
-// 上面的箭头函数与以下传统函数功能相同
+// 相当于
 function sum(a) {
   return a + 1;
 }
