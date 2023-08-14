@@ -1,11 +1,12 @@
 # React 组件
+
 示例:[../script/08-react-component/](../script/08-react-component/)
 ![](image/08-study-logs.png)
 
 React 中组件的定义方式有两种：
 
-1. 基于函数的组件 
-2. 基于类的组件 
+1. 基于函数的组件
+2. 基于类的组件
 
 类组件比起函数组件，有更多的功能，但是也更加复杂，所以在实际开发中尽量使用函数组件，必要时再使用类组件
 
@@ -28,16 +29,16 @@ root.render(<App />);
 ```
 
 ## 类组件 Class Component
+
 - 类组件必须要继承 React.Component
 - 类组件必须要有一个 render 方法，render 方法必须要返回一个 JSX 元素
 
 ```js
-import React from "react"; 
+import React from "react";
 
 class App extends React.Component {
-    render() {
-        return <h1>我是一个类组件！</h1>;
-    }
+  render() {
+    return <h1>我是一个类组件！</h1>;
+  }
 }
-
 ```

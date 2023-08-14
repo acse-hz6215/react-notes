@@ -48,7 +48,29 @@
 
    > 表达式 = 最终会返回一个值的语句，如 {a + b} 或 {user.firstName}。JS 语句，如 if 和 for，不能直接在 { } 中使用，但可以在它们外部使用; 如果表达式是 null、undefined、Boolean，则不会显示
 
-5. 属性&属性名：
+5. 当函数体有多于一条语句或者需要明确的返回值时，通常会使用 `{大括号}` 和 `return`
+
+   ```js
+   // 对于单一表达式的箭头函数，可以省略 {} 和 return
+   const App = () => (
+     <div>
+       <button>点我一下</button>
+     </div>
+   );
+
+   // 如果的组件有其他的语句，例如变量声明或逻辑处理，则需要使用 {} 和 return
+   const App = () => {
+     let buttonName = "点我一下";
+     return (
+       // 注意return后面的括号不是必要，但是为了可读性，建议加上
+       <div>
+         <button>{buttonName}</button>
+       </div>
+     );
+   };
+   ```
+
+6. 属性&属性名：
    1. 在 JSX 中属性名采用驼峰命名法，例如 `className`、`htmlFor`、`onClick` 等；
    2. 属性可以直接写在标签上
       ```html
@@ -59,4 +81,4 @@
       <div style={{ color: "red", fontSize: "20px" }}></div>
       // 注意这里用了双大括号{{}}，外层大括号表示这是一个表达式，内层大括号表示这是一个对象
       ```
-6. JSX 中的注释要写在`{}`里 -> `{/* ... */}`
+7. JSX 中的注释要写在`{}`里 -> `{/* ... */}`

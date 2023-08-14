@@ -1,6 +1,6 @@
 import Logs from "./Components/Logs/Logs";
 
-function App()
+const App = () =>
 {
     // 文件名为App.js，所以这里的函数名为App，最好一致
     return <div>

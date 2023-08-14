@@ -1,11 +1,22 @@
 
 
-// 创建一个app组件
-const app = (
-    <div>
-        <h1>Hello React</h1>
-        <p>This is my first React project!</p>
-    </div>
-);
+// // 创建一个app组件
+// const App = (
+//     <div>
+//         <h1>Hello React</h1>
+//         <p>This is my first React project!</p>
+//     </div>
+// );
 
-export default app;
+// export default App;
+
+
+const App = () =>
+{
+    return <div>
+        <button>点我一下</button>
+   </div>
+};
+
+
+export default App;

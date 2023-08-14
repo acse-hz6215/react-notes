@@ -2,9 +2,9 @@
 
 // 引入ReactDOM
 import ReactDOM from "react-dom/client";
-import app from "./App";
+import App from "./App";
 
 
 // 将 app组件渲染到页面上
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(app);
+root.render(<App /> );

@@ -1,6 +1,6 @@
 import React from "react";
-import LogDates from "./LogDate";
-import LogContent from "./LogContent";
+import LogDates from "./LogDate/LogDate";
+import LogContent from "./LogContent/LogContent";
 import "./LogItem.css";
 
 function LogItem()
