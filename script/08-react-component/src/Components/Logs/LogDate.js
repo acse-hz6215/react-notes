@@ -5,7 +5,7 @@ function LogDates()
 {
     return (
         <div className='date'>
-            <div className='month'>一月</div>
+            <div className='month'>August</div>
             <div className='day'>1</div>
         </div>
     )

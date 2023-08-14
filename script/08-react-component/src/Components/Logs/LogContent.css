@@ -7,11 +7,12 @@
 
 /*设置描述内容*/
 .desc{
-    font-size: 16px;
+    font-size: 20px;
     color: #194B49;
 }
 
 /*设置学习时间*/
 .time{
+    font-size:20px;
     color: #D62828;
 }

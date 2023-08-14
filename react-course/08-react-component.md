@@ -1,4 +1,6 @@
 # React 组件
+示例:[../script/08-react-component/](../script/08-react-component/)
+![](image/08-study-logs.png)
 
 React 中组件的定义方式有两种：
 
