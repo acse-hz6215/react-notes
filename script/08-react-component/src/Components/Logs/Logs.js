@@ -6,8 +6,6 @@ const Logs = () =>
 {
     return <div className="logs">
         <LogItem />
-        <LogItem />
-        <LogItem />
     </div>
 };
 

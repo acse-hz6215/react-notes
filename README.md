@@ -2,6 +2,7 @@
 
 ```
 tree -d -I 'node_modules|build'
+grep -r "keyword" /path/to/directory
 
 ├── JS-basics
 ├── react-course

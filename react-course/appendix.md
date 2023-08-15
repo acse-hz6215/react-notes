@@ -1,8 +1,9 @@
 ## 中英文对照表
 
-| 中文名       | 英文名                | 出现      |
+| 中文名       | 英文名                | 出现                   |
 | ------------ | --------------------- | ---------------------- |
 | 回调函数     | callback              | JSX-basics/07-array.md |
+| 构造函数     | constructor           | JSX-basics/06-class-p1/p3.md |
 | 元素         | element               |
 | 元素属性     | props                 |
 | 父元素       | parent element        |
