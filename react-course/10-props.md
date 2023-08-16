@@ -191,11 +191,11 @@ export default person;
     * 多个整数 -> 年、月、日、时、分、秒、毫秒
         比如 new Date(2021, 2, 19, 12, 30, 30, 500) 表示 2021 年 3 月 19 日 12:30:30.500
     */
-````
+    ```
 
 2.  使用`Date`对象的`getXXX()`方法来获取日期和时间
 
-````js
+```js
  const date = new Date();
 
  const year = date.getFullYear(); // 年
