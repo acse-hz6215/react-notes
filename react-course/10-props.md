@@ -59,7 +59,7 @@ export default person;
 
 一般来说数据是从数据库或者服务器获取的，不会直接写在代码中
 
-假设现在有一个数组，包含了 3 个对象，每个对象都有 4 个属性，分别是
+假设现在有一个数组，包含了 3 个对象，每个对象都有 4 个属性，分别是id、name、age、hobbies
 
 ```js
 const data [
@@ -70,6 +70,8 @@ const data [
 ```
 
 现在可以使用`map()`方发创建`<Person />`组件，然后将`data`数组中的每个对象的 id、name、age、hobbies 属性传递给<Person />组件， 这样就可以动态地渲染出多个`<Person />`组件了
+
+> 关于`map()`方法的使用，可以参考[./05-rendering-list.md](./05-rendering-list.md) 以及[../JS-basics/07-arrary.md](../JS-basics/07-arrary.md)
 
 ```js
 // App.js
