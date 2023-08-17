@@ -45,7 +45,7 @@ React 开发中，通常使用`npm` 或 `yarn`作为包管理器来对项目进�
      ```json
      {
         "scripts": {
-           "start": "react-scripts start"
+           "start": "react-scripts start",
            "build": "react-scripts build"
            ...
         }

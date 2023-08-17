@@ -1,4 +1,4 @@
-# React 组件
+Kv# React 组件
 
 示例:[../script/08-react-component/](../script/08-react-component/)
 ![](image/08-study-logs.png)
@@ -8,7 +8,7 @@ React 中组件的定义方式有两种：
 1. 基于函数的组件
 2. 基于类的组件
 
-类组件比起函数组件，有更多的功能，但是也更加复杂，所以在实际开发中尽量使用函数组件，必要时再使用类组件
+类组件比起函数组件，有更多的功能，但是也更加复杂，所以在实Kv际开发中尽量使用函数组件，必要时再使用类组件
 
 ## 函数组件 Functional Component
 
