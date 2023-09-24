@@ -18,7 +18,7 @@ const App = () =>
     return (
         <div className="app">
             <h1>Count: {count}</h1> {/*在页面中显示变量的值*/}
-            <button onClick={handleClick}>Click me</button>{" "}
+            <button onClick={handleClick}>Click me</button>
             {/*  点击按钮后，调用handleClick函数  */}
         </div>
     );

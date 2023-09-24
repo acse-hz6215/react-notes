@@ -32,9 +32,16 @@ const App = () => {
 export default App;
 ```
 
-注意：React 并不会因为一个普通变量的改变而重新渲染组件，React 只会在状态(state)或 props 发生变化时重新渲染组件
+注意：React 并不会因为一个普通变量的改变而重新渲染组件，React 只会在state或 props 发生变化时重新渲染组件
 
-为了让组件重新渲染，需要使用钩子函数（Hooks）useState 来创建一个 state 变量，然后使用这个变量来存储计数器的值：
+为了让组件重新渲染，需要创建一个state变量，state相当于一个在React后台已经注册的变量，React会监控这个变量的变化，当state变化时会自动触发重新渲染。
+> import {useState} from "react";
+
+要创建state变量，需要使用钩子函数（Hooks）useState 。钩子函数需要一个值作为他的参数，这个值就是state的初始值（比如：useState(0)的 initial state是0）：
+> useState(0)
+
+钩子函数返回的是一个数组，数组中第一个元素是初始值，第二个元素是一个函数，通常命名为setXxx。注意，要想修改state不能直接修改初始值，需要通过函数来修改，这样才能触发重新渲染。
+>  [initialState, fucntion]
 
 ```js
 // App.js
