@@ -2,7 +2,7 @@
 
 示例：[../script/11-state/](../script/11-state/)
 
-<img src=" ./image/11-counter.png" width="200">
+<img src="./image/11-counter.png" width="200">
 
 在 React 中，当组件渲染完毕后，直接修改组件内的变量并不会导致组件的重新渲染。要让组件重新渲染，需要使用一个特殊的变量`state`
 
@@ -73,7 +73,7 @@ const App = () => {
 export default App;
 ```
 
-## 注意
+## 注意事项
 
 1. 钩子函数都以`use`开头，比如`useState`、`useEffect`等 
 
@@ -102,5 +102,26 @@ const handler1 = () => {
 const handler1 = () => {
     setCount(prevCount => prevCount + 1);  // 当setCount调用这个函数时，我们告诉React：请你查看count的当前值，将其命名为prevCount，然后为我计算prevCount + 1作为新的值
 }
+```
+5. 用展开语法来继承原始对象的属性，这样可以只改变对象的其中一个属性，剩余的不变
+```js
+// Spread syntax
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]
+```
+```js
+const [user, setUser] = useState({ name: 'Jack', age: 19 });
+const handler2 = () => 
+{
+    // setUser({ name: 'Mark'}) // 这样修改的话名字会变，但是age会直接消失
+    setUser({ ...user, name: 'Mark' }); // 只修改其中一个变量name, age保持不变
+}
+
+return (
+    <div className="app">
+        <h1>{user.name} -- {user.age} </h1>
+        <button onClick={handler2}>Click Me</button>
+    </div>
+);
 
 ```
