@@ -7,7 +7,7 @@ const App = () =>
 
 
     const clickHandler = () =>
-    { 
+    {
         h1Ref.current.innerText = "新标题"; // 修改容器中的内容
     };
 

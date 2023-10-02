@@ -1,5 +1,9 @@
 # 获取原生的 DOM 对象
 
+示例：[../script/12-DOM-access-and-useRef/](../script/12-DOM-access-and-useRef/)
+
+<img src="./image/12-DOM.png" width="400">
+
 在 React 中有两种方法获取 DOM 对象：
 
 #### 1. 使用传统的`document` ，直接对 DOM 进行操作(不推荐)

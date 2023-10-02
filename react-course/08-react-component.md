@@ -13,7 +13,7 @@ React 中组件的定义方式有两种：
 ## 函数组件 Functional Component
 
 - 基于函数的组件其实就是一个<u>会返回 JSX（React 元素）</u> 的普通的 JS 函数
-- 函数名必须以大写字母开头
+- 函数名必须以大写字母开头，比如 App、Header、Footer 等
 
 ```js
 import ReactDOM from "react-dom/client";
